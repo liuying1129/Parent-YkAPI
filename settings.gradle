@@ -1,0 +1,13 @@
+//顺序无关，gradle会根据依赖关系进行排序、编译
+
+//父子目录结构
+//include 'SRC_YkAPI','LYFunctionJ'
+
+//平行目录结构
+include 'SRC_YkAPI'
+project(':SRC_YkAPI').projectDir = new File(settingsDir, '../SRC_YkAPI')
+
+include 'LYFunctionJ'
+project(':LYFunctionJ').projectDir = new File(settingsDir, '../LYFunctionJ')
+
+//命令gradle projects可查看目录结构
