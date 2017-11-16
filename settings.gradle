@@ -1,11 +1,11 @@
 //顺序无关，gradle会根据依赖关系进行排序、编译
 
 //父子目录结构
-//include 'SRC_YkAPI','JAR-LYFunction'
+//include 'WAR-YkAPI','JAR-LYFunction'
 
 //平行目录结构
-include 'SRC_YkAPI'
-project(':SRC_YkAPI').projectDir = new File(settingsDir, '../SRC_YkAPI')
+include 'WAR-YkAPI'
+project(':WAR-YkAPI').projectDir = new File(settingsDir, '../WAR-YkAPI')
 
 include 'JAR-LYFunction'
 project(':JAR-LYFunction').projectDir = new File(settingsDir, '../JAR-LYFunction')
